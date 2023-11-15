@@ -1,5 +1,5 @@
 import { Component, OnInit, inject } from '@angular/core';
-// import { Router } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-splash',
@@ -8,14 +8,14 @@ import { Component, OnInit, inject } from '@angular/core';
 })
 export class SplashPage implements OnInit {
 
-  // router = inject(Router);
+  router = inject(Router);
 
   constructor() { }
 
   ngOnInit() {
-    // setTimeout(() => {
-    //   this.router.navigateByUrl('/auth')
-    // }, 6000)
+    setTimeout(() => {
+      this.router.navigateByUrl('/auth')
+    }, 6000)
   }
 
 }
